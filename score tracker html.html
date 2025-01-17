@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Score Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        .btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .score-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .score-list li {
+            padding: 10px;
+            background-color: #f9f9f9;
+            margin-bottom: 5px;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Game Score Tracker</h1>
+    <div class="input-group">
+        <label for="player-name">Player Name:</label>
+        <input type="text" id="player-name">
+    </div>
+    <button class="btn" onclick="addPlayer()">Add Player</button>
+
+    <div class="input-group">
+        <label for="score-update">Update Score (Enter points to add or subtract):</label>
+        <input type="number" id="score-update">
+    </div>
+    <button class="btn" onclick="updateScore()">Update Score</button>
+
+    <h3>Scores:</h3>
+    <ul id="score-list" class="score-list"></ul>
+
+    <button class="btn" onclick="resetScores()">Reset Scores</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
