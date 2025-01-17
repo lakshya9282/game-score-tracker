@@ -1,2 +1,0 @@
-# Minimum required version of Python
-python>=3.6
