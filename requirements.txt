@@ -1,2 +1,2 @@
 # Minimum required version of Python
-python>=24.3.1
+
